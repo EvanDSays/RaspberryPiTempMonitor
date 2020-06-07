@@ -16,7 +16,7 @@ The DS18B20 has three pins. Using female-to-female jumper wires, I plugged:
 3. The out/data pin to GPIO4 on my Raspberry Pi
 
 # Step 3: Configure your pi to read from the sensor
-Follow the steps under the **ENABLE THE ONE-WIRE INTERFACE** section [here] (https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/)
+Follow the steps under the **ENABLE THE ONE-WIRE INTERFACE** section [within this circuit basics write-up](https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/)
 
 # Step 4: Configure your account at Adafruit.IO
 Setup an account at [Adafruit.IO](http://io.adafruit.com) which will be used to store your temperature readings.  Once you have an account, create a feed for the temperature readings.  Take note of the following items:
