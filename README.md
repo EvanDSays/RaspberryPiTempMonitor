@@ -37,6 +37,7 @@ Setup an account at [Adafruit.IO](http://io.adafruit.com) which will be used to 
 2. Place the [Send.Temp.To.Adafruit.IO.py](https://github.com/EvanDSays/RaspberryPiTempMonitor/blob/master/Send.Temp.To.Adafruit.IO.py) script from this repo on your Raspberry Pi.  You will need to change the Adafruit variables found near the bottom of the script based on the information from step 4 above.
 3. Configure the script the run on a schedule by running `crontab -e` on your Raspberri Pi.  Scroll down to the bottom of the file and add an entry like the following: `* * * * * python3 /home/pi/Send.Temp.To.Adafruit.IO.py`. Be sure to change the path to wherever you placed the file. [Here is some documentation explaining cron on a Raspberry Pi](https://www.raspberrypi.org/documentation/linux/usage/cron.md).
 
+You should see the data appear in your Adafruit.IO feed.  Here is a screencap from my feed:
 ![Adafruit.IO Example](Adafruit.IO.Screencap.JPG)
 
 # Step 6: (Optional) Configure Adafruit.IO integrations
