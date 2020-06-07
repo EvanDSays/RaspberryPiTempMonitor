@@ -1,5 +1,5 @@
 # Raspberry Pi Temperature Monitor
-This documents my steps to turn my old Raspberry Pi (Model B V2) into a temperature monitor.  [This YouTube Video](https://www.youtube.com/watch?v=aEnS0-Jy2vE) was very helpful to get me started.
+This documents how I turned my old Raspberry Pi (Model B V2) into a temperature monitor.  [This YouTube Video](https://www.youtube.com/watch?v=aEnS0-Jy2vE) was very helpful to get me started.
 
 # Supplies
 1. A Raspberry Pi 
