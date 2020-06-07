@@ -18,6 +18,9 @@ Run the `pinout` command on your Raspberry Pi to get a reference for your GPIO p
 2. The negative pin on the DS18B20 to one of the **GND** GPIO pins on my Raspberry Pi
 3. The out/data pin to the **GPIO4** pin on my Raspberry Pi
 
+Here are the pins for my Pi Model B V2:
+    ![Pi Model B V2 Pins](/images/pinout.JPG)
+
 # Step 3: Configure your Raspberry Pi to read from the sensor
 Follow the steps under the **ENABLE THE ONE-WIRE INTERFACE** section [within this Circuit Basics write-up](https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/).  Just in case that link breaks in the future, here is a summarized list of the steps:
 * `sudo nano /boot/config.txt`
