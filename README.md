@@ -16,17 +16,17 @@ The DS18B20 has three pins. Using female-to-female jumper wires, I plugged:
 3. The out/data pin to GPIO4 on my Raspberry Pi
 
 # Step 3: Configure your pi to read from the sensor
-Follow the steps under the **ENABLE THE ONE-WIRE INTERFACE** section here: https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
+Follow the steps under the **ENABLE THE ONE-WIRE INTERFACE** section [here] (https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/)
 
 # Step 4: Configure your account at Adafruit.IO
-Setup an account at Adafruit.IO which will be used to store your temperature readings.  Once you have an account, create a feed for the temperature readings.  Take note of the following items:
+Setup an account at [Adafruit.IO](http://io.adafruit.com) which will be used to store your temperature readings.  Once you have an account, create a feed for the temperature readings.  Take note of the following items:
 1. Your Adafruit.IO username
 2. Your Adafruit.IO key
 3. Your feed's name
 
 # Step 5: Configure the Python code on your Raspberry Pi
 1. Install the Adafruit IO python library on your Raspberry Pi by running "pip3 install adafruit-io"
-2. Place the Send.Temp.To.Adafruit.IO.py script from this repo on your Raspberry Pi.  You will need to change the Adafruit variables found near the bottom of the script based on the information from step 4 above.
+2. Place the [Send.Temp.To.Adafruit.IO.py](https://github.com/EvanDSays/RaspberryPiTempMonitor/blob/master/Send.Temp.To.Adafruit.IO.py) script from this repo on your Raspberry Pi.  You will need to change the Adafruit variables found near the bottom of the script based on the information from step 4 above.
 3. Configure the script the run on a schedule by running `crontab -e` on your Raspberri Pi.  Scroll down to the bottom of the file and add an entry like the following: `* * * * * python3 /home/pi/Send.Temp.To.Adafruit.IO.py`. Be sure to change the path to wherever you placed the file.
 
 # Step 6: (Optional) Configure Adafruit.IO integrations
