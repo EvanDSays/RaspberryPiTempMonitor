@@ -14,9 +14,9 @@ Here is what mine looks like<br>
 
 # Step 2: Hook up the sensor
 Run the `pinout` command on your Raspberry Pi to get a reference for your GPIO pins [(more info here)](https://www.raspberrypi.org/documentation/usage/gpio/).  The DS18B20 module has three pins that need to be connected to your Raspberry Pi. Using female-to-female jumper wires, I plugged:
-1. The positve pin on the DS18B20 to the **5V** GPIO pin on my Raspberry Pi
-2. The negative pin on the DS18B20 to one of the **GND** GPIO pins on my Raspberry Pi
-3. The out/data pin to the **GPIO4** pin on my Raspberry Pi
+1. The positve (**+**) pin on the DS18B20 to the **5V** GPIO pin on my Raspberry Pi
+2. The negative (**-**) pin on the DS18B20 to one of the **GND** GPIO pins on my Raspberry Pi
+3. The data (**OUT**) pin on the DS18B20 to the **GPIO4** pin on my Raspberry Pi
 
 Here are the three pins for my Pi Model B V2, boxed in yellow<br>
     ![Pi Model B V2 Pins](/images/pinout.JPG)
