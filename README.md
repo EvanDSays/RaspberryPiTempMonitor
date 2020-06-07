@@ -24,7 +24,10 @@ Setup an account at Adafruit.IO which will be used to store your temperature rea
 2. Your Adafruit.IO key
 3. Your feed's name
 
-# Step 5: Python code on your Raspberry Pi
+# Step 5: Configure the Python code on your Raspberry Pi
 1. Install the Adafruit IO python library on your Raspberry Pi by running "pip3 install adafruit-io"
 2. Place the Send.Temp.To.Adafruit.IO.py script from this repo on your Raspberry Pi.  You will need to change the Adafruit variables found near the bottom of the script based on the information from step 4 above.
 3. Configure the script the run on a schedule by running `crontab -e` on your Raspberri Pi.  Scroll down to the bottom of the file and add an entry like the following: `* * * * * python3 /home/pi/Send.Temp.To.Adafruit.IO.py`. Be sure to change the path to wherever you placed the file.
+
+# Step 6: (Optional) Configure Adafruit.IO integrations
+I am using IFTTT to send me an email when the temperature goes above a set threshold.  The Adafruit.IO API allows many other integrations, so feel free to pick the best for your specific use case.
