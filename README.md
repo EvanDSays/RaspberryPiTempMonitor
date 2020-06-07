@@ -3,8 +3,8 @@ This documents my steps to turn my old Raspberry Pi (Model B) into a temperature
 
 # Supplies
 1. A Raspberry Pi 
-2. A temperature sensor (I used a DS18B20) [example](https://www.amazon.com/ARCELI-DS18B20-Temperature-Electronic-Building/dp/B07DN3R1YW/)
-3. Three female-to-female jumper wires [example](https://www.amazon.com/GenBasic-Piece-Female-Jumper-Wires/dp/B01L5ULRUA)
+2. A temperature sensor (I used a DS18B20) [(example)](https://www.amazon.com/ARCELI-DS18B20-Temperature-Electronic-Building/dp/B07DN3R1YW/)
+3. Three female-to-female jumper wires [(example)](https://www.amazon.com/GenBasic-Piece-Female-Jumper-Wires/dp/B01L5ULRUA)
 
 # Step 1: Buy a sensor
 I bought the cheapest temperature sensor module I could find that already had the resistor built in.  I ended up getting an Arceli DS18B20 Module on Amazon for $4.99 plus tax.  There are other options, like the SunFounder DS18B20 Temperature Sensor Module, but that was $7.99 so I opted for the cheaper option.
