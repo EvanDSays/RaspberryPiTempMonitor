@@ -16,7 +16,15 @@ Run the `pinout` command on your Raspberry Pi to get a reference for your GPIO p
 3. The out/data pin to the **GPIO4** pin on my Raspberry Pi
 
 # Step 3: Configure your Raspberry Pi to read from the sensor
-Follow the steps under the **ENABLE THE ONE-WIRE INTERFACE** section [within this Circuit Basics write-up](https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/)
+Follow the steps under the **ENABLE THE ONE-WIRE INTERFACE** section [within this Circuit Basics write-up](https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/).  Just in case that link breaks in the future, here is a summarized list of the steps:
+`sudo nano /boot/config.txt`
+Add this to the bottom of the file: `dtoverlay=w1–gpio`
+`sudo reboot`
+`sudo modprobe w1–gpio`
+`sudo modprobe w1-therm`
+`cd /sys/bus/w1/devices/28` then press `tab` to autocomplete the directory
+`cat w1_slave`
+If you see something like 't=28625' then your sensor is working.  28625 in this example means 28.625 degrees Celsius.
 
 # Step 4: Configure your account at Adafruit.IO
 Setup an account at [Adafruit.IO](http://io.adafruit.com) which will be used to store your temperature readings.  Once you have an account, create a feed for the temperature readings.  Take note of the following items:
