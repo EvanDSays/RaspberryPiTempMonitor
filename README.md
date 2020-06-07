@@ -27,8 +27,4 @@ Setup an account at Adafruit.IO which will be used to store your temperature rea
 # Step 5: Python code on your Raspberry Pi
 1. Install the Adafruit IO python library on your Raspberry Pi by running "pip3 install adafruit-io"
 2. Place the Send.Temp.To.Adafruit.IO.py script from this repo on your Raspberry Pi.  You will need to change the Adafruit variables found near the bottom of the script based on the information from step 4 above.
-3. Configure the script the run on a schedule by running the following command on your Rasperry Pi
-`crontab -e`
-Then scroll down to the bottom of the file and add an entry like the following:
-`* * * * * python3 /home/pi/Send.Temp.To.Adafruit.IO.py`
-Be sure to change the path to wherever you placed the file.
+3. Configure the script the run on a schedule by running `crontab -e` on your Raspberri Pi.  Scroll down to the bottom of the file and add an entry like the following: `* * * * * python3 /home/pi/Send.Temp.To.Adafruit.IO.py`. Be sure to change the path to wherever you placed the file.
