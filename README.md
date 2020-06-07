@@ -18,7 +18,7 @@ Run the `pinout` command on your Raspberry Pi to get a reference for your GPIO p
 2. The negative (**-**) pin on the DS18B20 to one of the **GND** GPIO pins on my Raspberry Pi
 3. The data (**OUT**) pin on the DS18B20 to the **GPIO4** pin on my Raspberry Pi
 
-Here are the three pins for my Pi Model B V2, boxed in yellow<br>
+Here are the three pins that I used on my Pi Model B V2, boxed in yellow<br>
     ![Pi Model B V2 Pins](/images/pinout.JPG)
 
 # Step 3: Configure your Raspberry Pi to read from the sensor
