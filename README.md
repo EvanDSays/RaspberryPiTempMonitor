@@ -38,4 +38,4 @@ Setup an account at [Adafruit.IO](http://io.adafruit.com) which will be used to 
 3. Configure the script the run on a schedule by running `crontab -e` on your Raspberri Pi.  Scroll down to the bottom of the file and add an entry like the following: `* * * * * python3 /home/pi/Send.Temp.To.Adafruit.IO.py`. Be sure to change the path to wherever you placed the file. [Here is some documentation explaining cron on a Raspberry Pi](https://www.raspberrypi.org/documentation/linux/usage/cron.md).
 
 # Step 6: (Optional) Configure Adafruit.IO integrations
-I am using IFTTT to send me an email when the temperature goes above a set threshold.  The Adafruit.IO API allows many other integrations, so feel free to pick the best for your specific use case.
+I am using [IFTTT](https://ifttt.com/) to send me an email when the temperature goes above a set threshold.  The Adafruit.IO API allows many other integrations, so feel free to pick the best for your specific use case.
