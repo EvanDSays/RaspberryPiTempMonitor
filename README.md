@@ -1,7 +1,7 @@
 # Raspberry Pi Temperature Monitor
 This documents how I turned my old Raspberry Pi (Model B V2) into a temperature monitor.  [This YouTube Video](https://www.youtube.com/watch?v=aEnS0-Jy2vE) was very helpful to get me started.
 
-# Supplies
+## Supplies
 1. A Raspberry Pi 
 2. A temperature sensor (I used a DS18B20) [(example)](https://www.amazon.com/ARCELI-DS18B20-Temperature-Electronic-Building/dp/B07DN3R1YW/)
 3. Three female-to-female jumper wires [(example)](https://www.amazon.com/GenBasic-Piece-Female-Jumper-Wires/dp/B01L5ULRUA)
